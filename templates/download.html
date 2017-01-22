@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+<div class="form">
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      {% if remove_mp4 %}
+    <a href="../download_file/ev_{{ remove_mp4 }}.mp4" download = "ev_{{ remove_mp4 }}.mp4" style="font-size:30px">Download Video Extracted Gakki</a>
+    <p></p>
+    <a href="../download_file/pv_{{ remove_mp4 }}.mp4" download = "pv_{{ remove_mp4 }}.mp4" style="font-size:30px">Download Video Face Box</a>
+    <p></p>
+    <a href="../download_file/tmp_{{ remove_mp4 }}.jpg" download = "tmp_{{ remove_mp4 }}.jpg" style="font-size:30px"> Download Picture Relationship </a>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+<div class="form">
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      {% if filename %}
+    <button type="button"onclick="location.href='../../processed/{{ filename }}'" style="font-size:50px">PROCESS</button>
+    <button type="button"onclick="location.href='../../download/{{ filename }}'" style="font-size:50px">Download Page</button>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

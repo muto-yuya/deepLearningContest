@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+<div class="form">
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      {% if filename %}
+    <a href="../processing/{{ filename }}" download style="font-size:50px">PROCESS</a>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
